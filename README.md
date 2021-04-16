@@ -2,6 +2,9 @@
 
 <img src="https://user-images.githubusercontent.com/49577069/113982934-f09aac80-987b-11eb-9cbe-624090707383.png" width="60%" height="60%">
 
+## Manual
+To execute in terminal, type `python main.py`
+
 ## References
 
 [1] K. Zhang, D. Zhang, C. Wang, L. Zeng, Y. Wang, and W. Zhao, “Compact Modeling and
