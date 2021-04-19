@@ -99,7 +99,7 @@ def manual_main_1():
     axs[1].grid()
     plt.gcf().canvas.set_window_title('manual_main_1')
     # plt.show()
-    plt.savefig('manual_main_1.png')
+    plt.savefig('result/manual_main_1.png')
     plt.close()
 
 
@@ -183,7 +183,7 @@ def manual_main_2():
     plt.grid()
     plt.gcf().canvas.set_window_title('manual_main_2')
     # plt.show()
-    plt.savefig('manual_main_2.png')
+    plt.savefig('result/manual_main_2.png')
     plt.close()
 
 
@@ -269,11 +269,11 @@ def paper_main_switch_without_VCMA(NON=0):
     plt.legend(loc='upper left', title='H_EX = -50 Oe')
     if(NON == 0):
         plt.gcf().canvas.set_window_title('paper_main_switch_without_VCMA')
-        plt.savefig('paper_main_switch_without_VCMA.png')
+        plt.savefig('result/paper_main_switch_without_VCMA.png')
         plt.close()
     elif(NON == 1):
         plt.gcf().canvas.set_window_title('paper_main_switch_without_VCMA_with_noise')
-        plt.savefig('paper_main_switch_without_VCMA_with_noise.png')
+        plt.savefig('result/paper_main_switch_without_VCMA_with_noise.png')
         plt.close()
     # plt.show()
 
@@ -401,7 +401,7 @@ def paper_switch_error_withoutVCMA_withNoise(NON=1):
     plt.grid()
     plt.gcf().canvas.set_window_title('switch_error_withoutVCMA_withNoise')
     # plt.show()
-    plt.savefig('switch_error_withoutVCMA_withNoise.png')
+    plt.savefig('result/switch_error_withoutVCMA_withNoise.png')
     plt.close()
 
 
@@ -464,7 +464,7 @@ def paper_main_switch_with_VCMA_different_ISOT(NON=0, VNV=1):
     plt.grid()
     plt.legend(loc='lower right', title='H_EX = -50 Oe')
     plt.gcf().canvas.set_window_title('paper_main_switch_with_VCMA_different_ISOT')
-    plt.savefig('paper_main_switch_with_VCMA_different_ISOT.png')
+    plt.savefig('result/paper_main_switch_with_VCMA_different_ISOT.png')
     plt.close()
     # plt.show()
 
@@ -528,7 +528,7 @@ def paper_main_switch_with_VCMA_different_V_MTJ(NON=0, VNV=1):
     plt.grid()
     plt.legend(loc='center right', title='H_EX = -50 Oe, \nI_SOT = -6.2619uA')
     plt.gcf().canvas.set_window_title('paper_main_switch_with_VCMA_different_V_MTJ')
-    plt.savefig('paper_main_switch_with_VCMA_different_V_MTJ.png')
+    plt.savefig('result/paper_main_switch_with_VCMA_different_V_MTJ.png')
     plt.close()
     # plt.show()
 
@@ -649,7 +649,7 @@ def paper_proposed_main_switch():
                title='H_EX = -50 Oe, \nI_SOT = -6.2619uA\nV_MTJ_1 = 1.4937V\nV_MTJ_2 = -1V')
     plt.gcf().canvas.set_window_title('paper_proposed_main_switch')
     # plt.show()
-    plt.savefig('paper_proposed_main_switch.png')
+    plt.savefig('result/paper_proposed_main_switch.png')
     plt.close()
 
 def paper_proposed_switch_error_rate():
@@ -703,20 +703,20 @@ def paper_proposed_switch_error_rate():
     fig.tight_layout()
     
     plt.gcf().canvas.set_window_title('paper_proposed_switch_error_rate, t1+t2 = 3ns')
-    plt.savefig('paper_proposed_switch_error_rate.png')
+    plt.savefig('result/paper_proposed_switch_error_rate.png')
     plt.close()
 
 
 if __name__ == '__main__':
     ################### reproduce manual ###################
 
-    # manual_main_1()
-    # manual_main_2()
+    manual_main_1()
+    manual_main_2()
 
     ################### reproduce paper ####################
 
     # paper_main_switch_without_VCMA()
-    paper_main_switch_without_VCMA_with_noise()
+    # paper_main_switch_without_VCMA_with_noise()
 
     # Caveat: takes around 45 min for 6@1000 iterations
     # paper_switch_error_withoutVCMA_withNoise()
